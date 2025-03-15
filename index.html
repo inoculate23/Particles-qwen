@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Particle.js</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+           <div class="content">
+             <h2>The Next <br> Dimension</h2>
+               <p>Haawke Qwen 2.5 AI coder</p>
+           </div>
+       </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/141228/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/CSSRulePlugin.min.js"></script>
+    <script src="assets/js/website.js"></script>
+    <script>
+        const content = CSSRulePlugin.getRule('.content:before')
+        const h1 = document.querySelector("h1")
+        const p = document.querySelector("p")
+        const t1 = gsap.timeline()
+
+        t1.from(content,{delay:.5,duration:4,cssRule:{scaleX:0}})
+        t1.to(h1,{duration:2,clipPath:"polygon(0 0,100% 0,100% 100%,0 100%)"},"-=3")
+        t1.to(p,{duration:2,clipPath:"polygon(0 0,100% 0,100% 100%,0 100%)"},"-=2")
+    </script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
