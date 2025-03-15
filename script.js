@@ -60,7 +60,7 @@ console.log(controls)
 
 //Objects
 
-const geometry = new THREE.TorusGeometry(0.76,.2,16,106)
+const geometry = new THREE.TorusGeometry(0.76,.2,16,196)
 const material = new THREE.PointsMaterial({
     size:0.0021
 })
