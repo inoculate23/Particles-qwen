@@ -1,4 +1,6 @@
-}
+
+
+        }
         .container .content{
             display: flex;
             gap:5em;
@@ -49,8 +51,9 @@
 
         .container{
             color: #fff;
-            width: 100%;
+            width: 70%;
             height: 100vh;
             display: grid;
             place-content: center;
             font-family: Arial, Helvetica, sans-serif;
+}
